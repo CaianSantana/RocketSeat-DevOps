@@ -2,6 +2,7 @@ services:
   node:
     container_name: node
     build: .
+    image: node:v1.0 
     env_file:
       - .env
     ports:
