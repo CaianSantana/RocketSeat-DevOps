@@ -1,7 +1,5 @@
-resource "aws_s3_bucket" "bucket" {
-  bucket = "${var.org_name}-estudos-bucket-iac-${terraform.workspace}"
-
-  tags = {
-    context = "${terraform.workspace}"
-  }
+module "s3"{
+  source      = "./modules/s3"
+  org_name    = "ifba"
+  bucket_name = "bucket-terraform"
 }
