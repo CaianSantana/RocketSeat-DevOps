@@ -3,8 +3,3 @@ variable "aws_profile" {
   type        = string
   default     = "default"
 }
-
-variable "org_name" {
-  type    = string
-  default = "ifba"
-}
