@@ -15,5 +15,5 @@ module "cloudfront" {
     IaC = true
   }
 
-  depends_on = [ module.s3 ]
+  depends_on = [module.s3]
 }
