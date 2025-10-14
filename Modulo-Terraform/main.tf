@@ -14,4 +14,6 @@ module "cloudfront" {
   cdn_tags = {
     IaC = true
   }
+
+  depends_on = [ module.s3 ]
 }
