@@ -9,3 +9,15 @@ output "vpc_main_route_table_id" {
   sensitive = false
   description = "ID da tabela de roteamento principal da VPC"
 }
+
+output "vpc_subnet_id" {
+  value = data.aws_subnet.subnet.id
+  sensitive = false
+  description = "ID da Sub-rede"
+}
+
+output "vpc_sg_id" {
+  value = aws_security_group.sg.id
+  sensitive = false
+  description = "ID do Grupo de Segurança"
+}

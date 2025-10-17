@@ -8,4 +8,18 @@ module "vpc" {
     Name = "main"
     Env  = terraform.workspace
   }
+
+  vpc_subnet_tags = {
+    IaC  = true
+    Name = "main"
+  }
+
+  vpc_sg_tags = {
+    IaC  = true
+    Name = "main"
+  }
+}
+
+module "ec2" {
+  source = "./modules/ec2"
 }
