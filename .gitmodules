@@ -1,0 +1,3 @@
+[submodule "Modulo-CICD/Estudo-API-Python"]
+	path = Modulo-CICD/Estudo-API-Python
+	url = https://github.com/CaianSantana/Estudo-API-Python/
